@@ -1,13 +1,17 @@
 /* set element with id="trunk-background" with z-index 0 */
 #trunk-background {
     z-index: -1;
+    position: relative;
+    left: 15%;
 }
 
 #elle-wen {
     z-index: 2;
     color:aliceblue;
     position: relative;
-    top: 330px;
+    top: 350px;
+    left: 10%;
+    font-size: 50px;
 }
 
 #nav-bar {
@@ -18,9 +22,10 @@
 
 #nav-bar a {
     color: aliceblue;
-    padding: 14px 20px;
+    padding: 25px 20px;
 }
 
 body {
     background-color: #222426;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
