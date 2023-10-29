@@ -1,0 +1,26 @@
+/* set element with id="trunk-background" with z-index 0 */
+#trunk-background {
+    z-index: -1;
+}
+
+#elle-wen {
+    z-index: 2;
+    color:aliceblue;
+    position: relative;
+    top: 330px;
+}
+
+#nav-bar {
+    z-index: 1;
+    position: relative;
+    top: 30px;
+}
+
+#nav-bar a {
+    color: aliceblue;
+    padding: 14px 20px;
+}
+
+body {
+    background-color: #222426;
+}

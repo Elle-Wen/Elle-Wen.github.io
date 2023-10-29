@@ -4,15 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.trunk.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <title>Home - Elle Wen</title>
 </head>
 
 <body>
-    <h1>Hi, I am little cute Elle Wen</h1>
-    <p>This is the first paragraph as a placeholder</p>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <div class="bg-image" id="trunk-background"></div>
+    <ul class="nav justify-content-center" id="nav-bar">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Research</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+    </ul>
+
+    <div class="container">
+        <h1 class="custom-text-color" id="elle-wen">Elle Wen</h1>
+    </div>
+
+    <script>
+        VANTA.TRUNK({
+            el: "#trunk-background",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 800.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x984584,
+            backgroundColor: 0x222426,
+            spacing: 0.00,
+            chaos: 1.50
+        })
+    </script>
 </body>
 
 </html>
