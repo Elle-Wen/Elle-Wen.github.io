@@ -5,24 +5,48 @@
     left: 15%;
 }
 
+/* change font to Consolas */
 #elle-wen {
     z-index: 2;
     color:aliceblue;
     position: relative;
     top: 350px;
-    left: 10%;
-    font-size: 50px;
+    left:auto;
+    font-size: 65px;
+    font-family: Consolas;
 }
 
 #nav-bar {
     z-index: 1;
     position: relative;
     top: 30px;
+    font-size: 20px;
 }
 
+/* change font to Consolas */
 #nav-bar a {
     color: aliceblue;
-    padding: 25px 20px;
+    padding: 25px 30px;
+    font-family: Consolas;
+}
+
+#nav-bar a.hover {
+    color: #924598;
+}
+
+#nav-bar a.active {
+    color: #924598;
+}
+
+#home-paragraph {
+    z-index: 1;
+    position: relative;
+    top: 750px;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: Consolas;
+    /* change the padding to make more space from the two sides */
+    padding: 0px 100px;
 }
 
 body {
