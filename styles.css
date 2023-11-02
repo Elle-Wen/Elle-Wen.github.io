@@ -30,10 +30,6 @@
     font-family: Consolas;
 }
 
-#nav-bar a.hover {
-    color: #924598;
-}
-
 #nav-bar a.active {
     color: #924598;
 }
