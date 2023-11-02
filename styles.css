@@ -56,9 +56,8 @@ img {
 
 #interest-ul li {
     font-size: 1.2rem;
-    margin-bottom: 20px; /* This adds space below each list item */
+    margin-bottom: 18px; /* This adds space below each list item */
 }
-
 
 #major {
     font-size: 1.2rem;
