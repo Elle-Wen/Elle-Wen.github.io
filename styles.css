@@ -42,11 +42,31 @@
     z-index: 1;
     position: relative;
     top: 750px;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: aliceblue;
     font-family: Consolas;
     /* change the padding to make more space from the two sides */
     padding: 0px 100px;
+}
+
+img {
+    width: 70%;
+    height: auto;
+}
+
+#interest-ul li {
+    font-size: 1.2rem;
+    margin-bottom: 20px; /* This adds space below each list item */
+}
+
+
+#major {
+    font-size: 1.2rem;
+    margin-bottom: 0px; /* This adds space below each list item */
+}
+
+#institution {
+    font-size: .9rem;
 }
 
 body {
