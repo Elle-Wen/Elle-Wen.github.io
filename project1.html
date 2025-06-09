@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>An Efficient Privacy-Preserving Sattelites Collision Detection Method</title>
+</head>
+<body>
+    <ul class="nav justify-content-center" id="nav-bar">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+    </ul>
+
+    <div class="container text-center mt-5" style="color: #924598; font-family: Consolas;">
+        <h1>An Efficient Privacy-Preserving Sattelites Collision Detection Method</h1>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <a href="pdf/thesis.pdf" target="_blank" style="color: #924598;">📄 This project eventually developed into my senior thesis.</a>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8" style="color: aliceblue; font-family: 'Times New Roman', Times, serif; font-size: 1.2rem;">
+                <h3>Abstract</h3>
+                <p>
+                    Satellite operators have high incentives to protect their satellites from collision due to
+                    the high cost of designing, building, launching and maintaining the satellites. Unfortunately, the fact that satellite owners often view the satellite trajectories as private
+        posts a serious barrier to coordination between different operators for more accurate
+        collision detection and prevention. This privacy concern becomes more apparent for
+        satellites used for military purposes given that satellites location could reveal countries’ military operations, intelligence-gathering methods, interests in specific regions
+        of the Earth, or technology capabilities.
+                </p>
+                
+                <p>
+                    A 2014 report from the RAND Corporation proposed a method that enables satellite operators to calculate collision probabilities (conjunction analysis) without sharing private information about the trajectories of their satellites using cryptographic
+        tools for the first time. Two years later, a paper optimized the implementation proposed in the RAND paper. However, even with the optimization, this method is still
+        too slow to feasibly run it on all of the objects to detect possible collisions and thus
+        is impractical if the operator owns multiple satellites.
+                </p>
+        
+                <p>
+                    In this work, I propose and implement a new method that is able to detect the
+        satellites at risk of collision without revealing the location information using “fuzzy”
+        private set intersection (PSI) and PSI with significantly reduced running time. The
+        running time of our method is dramatically quicker and making our method much
+        more scalable. Thus, it is able to run on every pair of first 751 satellites extracted from
+        the most recent satellites tle data provided by Space-Track with 5.5 × 10^7 AND gates,
+        where the sate of art of conjuction analysis would take 5.7 × 10^10 MULT gates. And
+        each MULT gate requires different number of AND gates depending on the number
+        of bits and implementations. However, the speed comes with the expense of accuracy.
+        With difference choice of parameters, there are different levels of false positives and
+        false negatives rates. When the collision distance is 500km, there can be around 20%
+        false negatives rates.
+                </p>
+        
+                <a href="projects.html" style="color: #924598;">← Back to Projects</a>
+            </div>
+        </div>
+    </div>   
+
+</body>
+</html>
